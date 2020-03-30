@@ -1,0 +1,65 @@
+// Download Font at https://www.dafont.com/commodore-64.font
+// Font by Devin Cook http://www.devincook.com/
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+
+    "profiles":
+    {
+        "defaults":
+        {
+            // Put settings here that you want to apply to all profiles
+        },
+        "list":
+        [
+                        {
+                // Make changes here to the powershell.exe profile
+                "guid": "{c0aa0d0e-e646-5271-96e7-009a87ff44bf}",
+                "name": "P64",
+                "hidden": false,
+                "experimental.retroTerminalEffect": false,
+                "colorScheme": "c64",
+                "fontFace": "Commodore 64",
+                "fontSize": 16,
+                "padding": "90,90,90,90",
+                "tabTitle": "PowerShell64",
+                "cursorShape": "filledBox",
+                "cursorColor": "#a5a5ff",
+                //Change the repo path in the line below
+                "backgroundImage": "[PATH TO REPO]\\P64_bg.png",
+                "backgroundImageStretchMode": "fill",
+                //Change the repo path in the line below
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoExit [PATH TO REPO]\\init.ps1",
+                "startingDirectory" : "%USERPROFILE%"
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [{
+        "name": "c64", 
+        "background": "#4242e7", 
+        "foreground": "#a5a5ff" ,
+        "cursorColor": "#a5a5ff", 
+        "selectionBackground": "#a5a5ff", 
+        "black": "#000000",
+        "blue": "#4242e7",
+        "brightBlue": "#a5a5ff",
+        "brightCyan": "#AAFFEE",
+        "brightGreen": "#AAFF66",
+        "brightPurple": "#CC44CC",
+        "brightRed": "#FF7777",
+        "brightWhite": "#FFFFFF",
+        "brightYellow": "#EEEE77",
+        "cyan": "#AAFFEE",
+        "green": "#00CC55",
+        "purple": "#CC44CC",
+        "red": "#880000",
+        "white": "#FFFFFF",
+        "brightBlack": "#000000",
+        "yellow": "#EEEE77"
+        }],
+    "keybindings": []
+}
