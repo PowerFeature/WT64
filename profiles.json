@@ -31,7 +31,7 @@
                 "backgroundImage": "[PATH TO REPO]\\P64_bg.png",
                 "backgroundImageStretchMode": "fill",
                 //Change the repo path in the line below
-                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoExit [PATH TO REPO]\\init.ps1",
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoExit [PATH TO REPO]\\reset.ps1",
                 "startingDirectory" : "%USERPROFILE%"
             }
         ]
