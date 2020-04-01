@@ -63,7 +63,6 @@ function SYS64738() {
 }
 
 function load([string]$inputLn) {
-    $inputLn
     if ($inputLn -eq '$ 8') {
         "SEARCHING FOR $"
         Start-Sleep -Seconds 2
