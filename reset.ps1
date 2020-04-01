@@ -27,7 +27,7 @@ $scriptRoot = Split-Path -parent $PSCommandPath
 
 cls
 ""
-$line1 = "**** MICROSOFT X64 POWERSHELL V" + $PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor + " ****"
+$line1 = "**** MICROSOFT WT64 POWERSHELL V" + $PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor + " ****"
 $line2 = " " + $mem + " KB RAM SYSTEM "+ $free  +" KILOBYTES FREE"
 
 CenterText $line1 ((Get-Host).UI.RawUI.MaxWindowSize.Width)

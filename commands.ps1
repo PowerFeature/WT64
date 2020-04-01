@@ -53,7 +53,7 @@ Get-ChildItem | ForEach-Object { -join((LeftText ([math]::Round($_.Length/100)).
 }
 function SYS64738() {
     Clear-Host
-    $line1 = "**** MICROSOFT X64 POWERSHELL V" + $PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor + " ****"
+    $line1 = "**** MICROSOFT WT64 POWERSHELL V" + $PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor + " ****"
     $line2 = " " + $mem + " KB RAM SYSTEM "+ $free  +" KILOBYTES FREE"
     CenterText $line1 ((Get-Host).UI.RawUI.MaxWindowSize.Width)
     " "
