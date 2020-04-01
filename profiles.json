@@ -20,7 +20,6 @@
                 "name": "WT64",
                 "hidden": false,
                 "experimental.retroTerminalEffect": false,
-                
                 "colorScheme": "c64",
                 "fontFace": "Commodore 64",
                 "fontSize": 16,
@@ -28,10 +27,9 @@
                 "tabTitle": "WINDOWS TERMINAL64",
                 "cursorShape": "filledBox",
                 "cursorColor": "#a5a5ff",
-                "backgroundImage": "C:\\Users\\jeschwar\\source\\repos\\PowerShell64\\P64_bg.png",
+                "backgroundImage": "C:\\[INSERT YOUR REPO PATH HERE]\\P64_bg.png",
                 "backgroundImageStretchMode": "fill",
-                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoExit C:\\Users\\jeschwar\\source\\repos\\PowerShell64\\reset.ps1",
-                //"startingDirectory" : "%USERPROFILE%"
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoExit C:\\[INSERT YOUR REPO PATH HERE]\\reset.ps1",
                 "startingDirectory" : "%USERPROFILE%"
 
 
