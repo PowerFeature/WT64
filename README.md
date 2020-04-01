@@ -2,9 +2,9 @@ A Commodore 64 Skin for Windows Terminal
 ![Video](https://github.com/KillerFeature/WT64/raw/master/video.gif "Video")
 
 PREREQUISITES
-Windows Terminal
-PowerShell 7
-C64 font Download Here https://www.dafont.com/commodore-64.font
+1. Windows Terminal
+2. PowerShell 7
+3. C64 font Download Here https://www.dafont.com/commodore-64.font
 
 INSTALLATION
 1. Clone the repo
