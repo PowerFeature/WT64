@@ -2,21 +2,18 @@
 ![alt text](https://github.com/KillerFeature/WT64/raw/master/WT64_hero.png)
 A Commodore 64 Experience for Windows Terminal
 
-![Video](https://github.com/KillerFeature/WT64/raw/master/video.gif "Video") { width=100% }
+![Video](https://github.com/KillerFeature/WT64/raw/master/video.gif "Video")
 
 ### Features
-- Scaling to Terminal size
-- Native C64 style commdands
-
-
-
+- Native C64 style commands like LOAD "$",8
+- Native C64 LIST layout for directory listing with size reporting and Blocks free indication.
+- Startup screen with actual PowerShell version and memory reporting
 
 Supported commands:
 1. LIST <path> [Lists the files in local or path directory in C64 disk style]
 2. LOAD "$",8 [Shows the classic loading sequence]
 3. SYS64738 [Shows the opening prompt]
 4. EDIT <filename> [Shorthand for nano]
-
 
 PREREQUISITES
 1. Windows Terminal

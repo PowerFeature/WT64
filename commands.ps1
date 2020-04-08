@@ -10,13 +10,11 @@ function CenterText([string]$inputLine,[int]$textWidth,[string]$wrapChar) {
         $leadingSpaces = $(" " * $spaceCount)
         if (-join( $wrapChar, $leadingSpaces, $inputLine, $leadingSpaces,$wrapChar).Length -lt $textWidth) {
             return -join( $wrapChar, $leadingSpaces, $inputLine, $leadingSpaces,$wrapChar, " ")
-            
         } else {
             return -join( $wrapChar, $leadingSpaces, $inputLine, $leadingSpaces,$wrapChar)
             
         }
     }
-
 }
 function LeftText([string]$inputLine,[int]$textWidth,[string]$wrapChar) {
     If ($inputLine.length -ge $textWidth) {
@@ -43,16 +41,13 @@ function RightText([string]$inputLine,[int]$textWidth,[string]$wrapChar) {
     }
 
 }
-function list ([string]$dirName){
+function LIST ([string]$dirName){
     $midWidth = [int] (Get-Host).UI.RawUI.MaxWindowSize.Width - 4
     if ($dirName.Length -gt 0) {
         $folderName = [System.IO.Path]::GetDirectoryName($dirName).toUpper().split("\")[-1]
-
     } else {
         $folderName = (Get-Location).toString().toUpper().split("\")[-1]
-
     }
-
         $e = "$([char]27)"
     -join("0 $e[44m$e[94m$e[7m",(CenterText $folderName ($midWidth-6)),"$e[27m$e[0m") 
 Get-ChildItem $dirName| ForEach-Object { -join((LeftText ([math]::Round($_.Length/100)).ToString() 6), ' ', (RightText $_.name.toUpper().Split(".")[0] ($midWidth-14) '"')," ", (RightText $_.name.toUpper().Split(".")[1] 10 ))}
@@ -73,7 +68,7 @@ CenterText $line2 ((Get-Host).UI.RawUI.MaxWindowSize.Width)
 "READY."
 }
 
-function load([string]$inputLn) {
+function LOAD([string]$inputLn) {
     if ($inputLn -eq '$ 8') {
         "SEARCHING FOR $"
         Start-Sleep -Seconds 2
