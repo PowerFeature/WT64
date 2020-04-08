@@ -80,7 +80,7 @@ function LOAD([string]$inputLn) {
         "SYNTAX ERROR"
     }
 }
-function edit ($File){
+function EDIT ($File){
 $File = $File -replace “\\”, “/” -replace “ “, “\ “
 bash -c "nano $File"
 }
