@@ -1,3 +1,5 @@
+$e = "$([char]27)"
+
 function CenterText([string]$inputLine,[int]$textWidth,[string]$wrapChar) {
     If (($inputLine.length + ($wrapChar.Length *2)) -ge $textWidth) {
 
@@ -41,25 +43,34 @@ function RightText([string]$inputLine,[int]$textWidth,[string]$wrapChar) {
     }
 
 }
-function list {
+function list ([string]$dirName){
     $midWidth = [int] (Get-Host).UI.RawUI.MaxWindowSize.Width - 4
-    $folderName = (Get-Location).toString().toUpper().split("\")[-1]
+    if ($dirName.Length -gt 0) {
+        $folderName = [System.IO.Path]::GetDirectoryName($dirName).toUpper().split("\")[-1]
+
+    } else {
+        $folderName = (Get-Location).toString().toUpper().split("\")[-1]
+
+    }
 
         $e = "$([char]27)"
     -join("0 $e[44m$e[94m$e[7m",(CenterText $folderName ($midWidth-6)),"$e[27m$e[0m") 
-Get-ChildItem | ForEach-Object { -join((LeftText ([math]::Round($_.Length/100)).ToString() 6), ' ', (RightText $_.name.toUpper().Split(".")[0] ($midWidth-14) '"')," ", (RightText $_.name.toUpper().Split(".")[1] 10 ))}
+Get-ChildItem $dirName| ForEach-Object { -join((LeftText ([math]::Round($_.Length/100)).ToString() 6), ' ', (RightText $_.name.toUpper().Split(".")[0] ($midWidth-14) '"')," ", (RightText $_.name.toUpper().Split(".")[1] 10 ))}
 -join((Get-PSDrive c).Free, " BLOCKS FREE.")
 "READY."
 }
 function SYS64738() {
+"$e[0m"
     Clear-Host
-    $line1 = "**** MICROSOFT WT64 POWERSHELL V" + $PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor + " ****"
-    $line2 = " " + $mem + " KB RAM SYSTEM "+ $free  +" KILOBYTES FREE"
-    CenterText $line1 ((Get-Host).UI.RawUI.MaxWindowSize.Width)
-    " "
-    CenterText $line2 ((Get-Host).UI.RawUI.MaxWindowSize.Width)
-    " "
-    "READY."
+""
+$line1 = "**** MICROSOFT WT64 POWERSHELL V" + $PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor + " ****"
+$line2 = " " + $mem + " KB SYSTEM RAM"+ $free  +" KILOBYTES FREE"
+
+CenterText $line1 ((Get-Host).UI.RawUI.MaxWindowSize.Width)
+" "
+CenterText $line2 ((Get-Host).UI.RawUI.MaxWindowSize.Width)
+" "
+"READY."
 }
 
 function load([string]$inputLn) {
@@ -73,4 +84,8 @@ function load([string]$inputLn) {
     } else {
         "SYNTAX ERROR"
     }
+}
+function edit ($File){
+$File = $File -replace “\\”, “/” -replace “ “, “\ “
+bash -c "nano $File"
 }

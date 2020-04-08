@@ -1,12 +1,20 @@
+## WT64
 A Commodore 64 Skin for Windows Terminal
 
 ![Video](https://github.com/KillerFeature/WT64/raw/master/video.gif "Video")
 
+### Features
+- Scaling to Terminal size
+- Native C64 style commdands
+
+
+
+
 Supported commands:
-1. LIST [Lists the files in local directory in C64 disk style]
+1. LIST <path> [Lists the files in local or path directory in C64 disk style]
 2. LOAD "$",8 [Shows the classic loading sequence]
 3. SYS64738 [Shows the opening prompt]
-
+4. EDIT <filename> [Shorthand for nano]
 
 
 PREREQUISITES

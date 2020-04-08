@@ -1,4 +1,5 @@
 "LOADING PLEASE WAIT ..."
+$e = "$([char]27)"
 $mem = [regex]::Match((wmic OS get TotalVisibleMemorySize /Value),'[0-9]+').Value + '000'
 $free = [regex]::Match((wmic OS get FreePhysicalMemory /Value),'[0-9]+').Value + '000'
 
@@ -24,17 +25,7 @@ function CenterText([string]$inputLine,[int]$textWidth,[string]$wrapChar) {
 
 }
 $scriptRoot = Split-Path -parent $PSCommandPath
-
-cls
-""
-$line1 = "**** MICROSOFT WT64 POWERSHELL V" + $PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor + " ****"
-$line2 = " " + $mem + " KB RAM SYSTEM "+ $free  +" KILOBYTES FREE"
-
-CenterText $line1 ((Get-Host).UI.RawUI.MaxWindowSize.Width)
-" "
-CenterText $line2 ((Get-Host).UI.RawUI.MaxWindowSize.Width)
-" "
-"READY."
 . "$scriptRoot\commands.ps1"
 
+SYS64738
 
