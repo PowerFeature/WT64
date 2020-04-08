@@ -1,9 +1,8 @@
 ## WT64
 ![alt text](https://github.com/KillerFeature/WT64/raw/master/WT64_hero.png)
-A Commodore 64 Skin for Windows Terminal
+A Commodore 64 Experience for Windows Terminal
 
-
-![Video](https://github.com/KillerFeature/WT64/raw/master/video.gif "Video")
+![Video](https://github.com/KillerFeature/WT64/raw/master/video.gif "Video" =100%x)
 
 ### Features
 - Scaling to Terminal size
