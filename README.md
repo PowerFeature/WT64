@@ -2,7 +2,7 @@
 ![alt text](https://github.com/KillerFeature/WT64/raw/master/WT64_hero.png)
 A Commodore 64 Experience for Windows Terminal
 
-![Video](https://github.com/KillerFeature/WT64/raw/master/video.gif "Video" =100%x)
+![Video](https://github.com/KillerFeature/WT64/raw/master/video.gif "Video") { width=100% }
 
 ### Features
 - Scaling to Terminal size
