@@ -84,3 +84,51 @@ function EDIT ($File){
 $File = $File -replace “\\”, “/” -replace “ “, “\ “
 bash -c "nano $File"
 }
+
+
+#
+# Internal commands (should be hidden inside of a module)
+#
+
+$varNameRegEx='([a-zA-Z]+)([\$|\%]?)' # returns name and type
+$expressionRegEx='\s*(\S+)\s*'        # returns expression
+
+function _CalculateExpressionValue([string]$Expression) {
+    # TODO: Hide this in module
+    while ($Expression -match $varNameRegEx) {
+        $Expression = $Expression -replace $Matches[0], [string](Get-Variable -Name $Matches[1] -ValueOnly -Scope Global)
+    }
+    try {
+        return (Invoke-Expression $Expression)
+    } catch {
+        "SYNTAX ERROR"
+    }
+}
+
+
+#
+# Public functions = C64 commands
+#
+
+function RUN ($File){
+    Invoke-Item $File
+}
+
+function  LET([string]$inputLn)  {
+    $regex = "^\s*$varNameRegEx\s*=\s*$expressionRegEx\s*"
+    if ($inputLn -notmatch $regex) {
+        "SYNTAX ERROR"
+        exit
+    }
+
+    $varName = $Matches[1]
+    $varType = $Matches[2]
+    $varCalculus = $Matches[3]
+    $varValue = (_CalculateExpressionValue $varCalculus)
+    Set-Variable -Name $varName -Value $varValue -Scope Global
+    # TODO: Include Type also
+}
+
+function  PRINT([string]$inputLn) {
+    Write-Host (_CalculateExpressionValue $inputLn)
+}
