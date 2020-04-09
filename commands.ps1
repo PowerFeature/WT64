@@ -59,7 +59,7 @@ function SYS64738() {
     Clear-Host
 ""
 $line1 = "**** WINDOWS TERMINAL POWERSHELL V" + $PSVersionTable.PSVersion.Major + "." + $PSVersionTable.PSVersion.Minor + " ****"
-$line2 = " " + $mem + " KILOBYTES SYSTEM RAM "+ $free  +"000 BYTES FREE"
+$line2 = " " + $mem + "K SYSTEM RAM "+ $free  +"000 BASIC BYTES FREE"
 
 CenterText $line1 ((Get-Host).UI.RawUI.MaxWindowSize.Width)
 " "
