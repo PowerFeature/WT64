@@ -30,9 +30,8 @@
                 "backgroundImage": "C:\\[INSERT YOUR REPO PATH HERE]\\P64_bg.png",
                 "backgroundImageStretchMode": "fill",
                 "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoExit C:\\[INSERT YOUR REPO PATH HERE]\\reset.ps1",
-                "startingDirectory" : "%USERPROFILE%"
-
-
+                "startingDirectory" : "%USERPROFILE%",
+                "icon": "C:\\[INSERT YOUR REPO PATH HERE]\\icon.png"
             }
         ]
     },
