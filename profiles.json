@@ -1,6 +1,5 @@
 // Download Font at https://www.dafont.com/commodore-64.font
 // Font by Devin Cook http://www.devincook.com/
-
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
@@ -23,12 +22,11 @@
                 "experimental.retroTerminalEffect": false,
                 "colorScheme": "c64",
                 "fontFace": "Commodore 64",
-                "fontSize": 16,
-                "padding": "90,90,90,90",
+                "fontSize": 22,
+                "padding": "0,0,0,0",
                 "tabTitle": "WINDOWS TERMINAL64",
                 "cursorShape": "filledBox",
                 "cursorColor": "#a5a5ff",
-                "backgroundImage": "INSERT YOUR REPO PATH HERE\\P64_bg.png",
                 "backgroundImageStretchMode": "fill",
                 "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoExit INSERT YOUR REPO PATH HERE\\reset.ps1",
                 "startingDirectory" : "%USERPROFILE%",
