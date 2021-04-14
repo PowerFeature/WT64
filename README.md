@@ -8,6 +8,7 @@ A Commodore 64 Experience for Windows Terminal
 - Native C64 style commands like LOAD "$",8
 - Native C64 LIST layout for directory listing with size reporting and Blocks free indication.
 - Startup screen with actual PowerShell version and memory reporting
+- CRT style display using shader from https://github.com/Hammster/windows-terminal-shaders 
 
 ### Supported commands:
 1. LIST <path> [Lists the files in local or path directory in C64 disk style]
