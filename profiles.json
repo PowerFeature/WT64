@@ -18,7 +18,7 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff42bc}",
                 "name": "WT64",
                 "hidden": false,
-                "experimental.pixelShaderPath": "INSERT YOUR REPO PATH HERE\\windows-terminal-shaders\\crt.hlsl",
+                "experimental.pixelShaderPath": "INSERT YOUR REPO PATH HERE\\crt.hlsl",
                 "experimental.retroTerminalEffect": false,
                 "colorScheme": "c64",
                 "fontFace": "Commodore 64",
