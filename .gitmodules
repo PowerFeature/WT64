@@ -1,0 +1,3 @@
+[submodule "windows-terminal-shaders"]
+	path = windows-terminal-shaders
+	url = https://github.com/Hammster/windows-terminal-shaders

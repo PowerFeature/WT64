@@ -19,6 +19,7 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff42bc}",
                 "name": "WT64",
                 "hidden": false,
+                "experimental.pixelShaderPath": "INSERT YOUR REPO PATH HERE\\windows-terminal-shaders\\crt.hlsl",
                 "experimental.retroTerminalEffect": false,
                 "colorScheme": "c64",
                 "fontFace": "Commodore 64",
@@ -27,11 +28,11 @@
                 "tabTitle": "WINDOWS TERMINAL64",
                 "cursorShape": "filledBox",
                 "cursorColor": "#a5a5ff",
-                "backgroundImage": "C:\\[INSERT YOUR REPO PATH HERE]\\P64_bg.png",
+                "backgroundImage": "INSERT YOUR REPO PATH HERE\\P64_bg.png",
                 "backgroundImageStretchMode": "fill",
-                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoExit C:\\[INSERT YOUR REPO PATH HERE]\\reset.ps1",
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoExit INSERT YOUR REPO PATH HERE\\reset.ps1",
                 "startingDirectory" : "%USERPROFILE%",
-                "icon": "C:\\[INSERT YOUR REPO PATH HERE]\\icon.png"
+                "icon": "INSERT YOUR REPO PATH HERE\\icon.png"
             }
         ]
     },

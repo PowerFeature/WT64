@@ -50,7 +50,8 @@ function LIST ([string]$dirName){
     }
         $e = "$([char]27)"
     -join("0 $e[44m$e[94m$e[7m",(CenterText $folderName ($midWidth-6)),"$e[27m$e[0m") 
-Get-ChildItem $dirName| ForEach-Object { -join((LeftText ([math]::Round($_.Length/100)).ToString() 6), ' ', (RightText $_.name.toUpper().Split(".")[0] ($midWidth-14) '"')," ", (RightText $_.name.toUpper().Split(".")[1] 10 ))}
+Get-ChildItem $dirName| ForEach-Object { -join((LeftText ([math]::Round($_.Length/100)).ToString() 6), ' ', (RightText $_.name.toUpper().Split(".")[0] ($midWidth-14) '"')," ", (RightText $_.name.toUpper().Split(".")[1] 10 ))  
+Start-Sleep -Milliseconds 50 }
 -join((Get-PSDrive c).Free, " BLOCKS FREE.")
 "READY."
 }

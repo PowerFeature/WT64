@@ -1,0 +1,8 @@
+C:\Users\jeschwar\source\repos\WT64\DRAW\bin\Debug\netstandard2.0\DRAW.deps.json
+C:\Users\jeschwar\source\repos\WT64\DRAW\bin\Debug\netstandard2.0\DRAW.dll
+C:\Users\jeschwar\source\repos\WT64\DRAW\bin\Debug\netstandard2.0\DRAW.pdb
+C:\Users\jeschwar\source\repos\WT64\DRAW\obj\Debug\netstandard2.0\DRAW.csprojAssemblyReference.cache
+C:\Users\jeschwar\source\repos\WT64\DRAW\obj\Debug\netstandard2.0\DRAW.AssemblyInfoInputs.cache
+C:\Users\jeschwar\source\repos\WT64\DRAW\obj\Debug\netstandard2.0\DRAW.AssemblyInfo.cs
+C:\Users\jeschwar\source\repos\WT64\DRAW\obj\Debug\netstandard2.0\DRAW.dll
+C:\Users\jeschwar\source\repos\WT64\DRAW\obj\Debug\netstandard2.0\DRAW.pdb
